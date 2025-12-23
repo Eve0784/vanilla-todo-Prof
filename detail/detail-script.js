@@ -1,4 +1,4 @@
-import { deleteTodo, getTodo, changeDoneStatus }from '../shared/todo-service.js';
+import {deleteTodo, getTodo, changeDoneStatus}from '../shared/todo-service.js';
 
 
 function displayTodo(todo) {
