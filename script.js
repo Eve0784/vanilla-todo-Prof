@@ -1,5 +1,6 @@
-function displayTodos(todos){
+import { getAllTodos, changeDoneStatus } from "./shared/todo-service.js";
 
+function displayTodos(todos){
     const todosContainer = document.getElementById('todos-container');
     todosContainer.innerHTML = "";
 

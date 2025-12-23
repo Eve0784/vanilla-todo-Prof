@@ -16,7 +16,8 @@
                 <h1>Nuovo Todo</h1>
             </header>
             <main>
-                <form id="todo-form" onsubmit="saveTodo(event)">
+                <!-- <form id="todo-form" onsubmit="saveTodo(event)"> -->
+                     <form id="todo-form">
                     <div class="form-group">
                         <label for="title">Titolo</label>
                         <input class="form-input" type="text" id="title" name="title" required>
@@ -45,7 +46,7 @@
         </div>
     </div>
 </body>
-<script src="../shared/todo-service.js"></script>
-<script src="./new-script.js"></script>
+<!-- <script src="../shared/todo-service.js"></script> -->
+<script type="module" src="./new-script.js"></script>
 
 </html>

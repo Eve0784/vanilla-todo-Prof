@@ -1,3 +1,4 @@
+import{postTodo}from'../shared/todo-service.js';
 
 function saveTodo(event) {
     event.preventDefault();
@@ -24,3 +25,5 @@ function saveTodo(event) {
         window.location.assign('../');
     })
 }
+
+document.getElementById('todo-form').addEventListener('submit', saveTodo);

@@ -1,3 +1,6 @@
+import { deleteTodo, getTodo, changeDoneStatus }from '../shared/todo-service.js';
+
+
 function displayTodo(todo) {
     const titleHeader = document.getElementById('todo-title');
     titleHeader.innerHTML = todo.title;

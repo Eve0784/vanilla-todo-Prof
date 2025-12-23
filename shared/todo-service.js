@@ -1,5 +1,7 @@
-function getAllTodos() {
-    const apiUrl = "https://6942665069b12460f310f9c1.mockapi.io/api/v1/todos"
+const baseUrl = "https://6942665069b12460f310f9c1.mockapi.io/api/v1/todos";
+
+export function getAllTodos() {
+    const apiUrl = baseUrl;
 
     return fetch(apiUrl)
     .then(response => response.json())
@@ -7,8 +9,8 @@ function getAllTodos() {
     .catch(error => console.error('Aiuuutoooo!', error));
 }
 
-function getTodo(id) {
-    const apiUrl = "https://6942665069b12460f310f9c1.mockapi.io/api/v1/todos/" + id;
+export function getTodo(id) {
+    const apiUrl = baseUrl + '/' + id;
 
     return fetch(apiUrl)
     .then(response => response.json())
@@ -16,19 +18,19 @@ function getTodo(id) {
     .catch(error => console.error('Aiuuutoooo!', error));
 }
 
-function deleteTodo(id) {
+export function deleteTodo(id) {
 
-    const apiUrl = "https://6942665069b12460f310f9c1.mockapi.io/api/v1/todos/" + id;
+    const apiUrl =  baseUrl + '/' + id;
 
     return fetch(apiUrl, {method: 'DELETE'})
     .then(response => response.json())
     .then(result => result)
-    .catch(error => console.error('Aiuuutoooo!', error))
+    .catch(error => console.error('Aiuuutoooo!', error));
 }
 
-function changeDoneStatus(id, newStatus) {
+export function changeDoneStatus(id, newStatus) {
 
-    const apiUrl = "https://6942665069b12460f310f9c1.mockapi.io/api/v1/todos/" + id;
+    const apiUrl =  baseUrl + '/' + id;
 
     return fetch(apiUrl, {
         method: 'PATCH',
@@ -36,12 +38,12 @@ function changeDoneStatus(id, newStatus) {
         body: JSON.stringify({ done: newStatus })
     }).then(response => response.json())
     .then(result => result)
-    .catch(error => console.error('Aiuuutoooo!', error))
+    .catch(error => console.error('Aiuuutoooo!', error));
 }
 
-function postTodo(todo) {
+export function postTodo(todo) {
 
-    const apiUrl = "https://6942665069b12460f310f9c1.mockapi.io/api/v1/todos"
+    const apiUrl = baseUrl;
 
     return fetch(apiUrl, {
         method: 'POST',
