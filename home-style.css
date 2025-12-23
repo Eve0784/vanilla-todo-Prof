@@ -1,4 +1,4 @@
-@import url('./style.css');
+@import url('./shared/style.css');
 
 .todo-card{
     margin-bottom: 4px;

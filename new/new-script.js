@@ -21,6 +21,6 @@ function saveTodo(event) {
     .then(createdTodo => {
         console.log('Created todo:', createdTodo);
         form.reset();
-        window.location.assign('./');
+        window.location.assign('../');
     })
 }

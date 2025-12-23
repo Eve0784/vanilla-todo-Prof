@@ -1,4 +1,4 @@
-@import url('./style.css');
+@import url('../shared/style.css');
 
 .detail-info{
     font-size: x-large;

@@ -64,7 +64,7 @@ function displayTodos(todos){
         const detailLink = document.createElement('a');
         detailLink.appendChild(document.createTextNode("🠊"));
         detailLink.classList.add("action");
-        detailLink.href = './detail.html?todoId=' + todo.id;
+        detailLink.href = './detail/detail.html?todoId=' + todo.id;
 
         actionsDiv.appendChild(detailLink);
 

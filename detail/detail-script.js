@@ -66,7 +66,7 @@ function deleteTodoAndRedirect() {
 
     if (confirm("Vuoi veramente cancellare il todo???")) {
         deleteTodo(selectedTodo.id).then(_ => {
-            window.location.assign('./')
+            window.location.assign('../')
         });  
     }
 }
