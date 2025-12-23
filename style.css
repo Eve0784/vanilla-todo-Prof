@@ -16,40 +16,18 @@ body{
     align-items: center;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
 .page{
     max-width: 800px;
     padding: 16px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-
-.todo-card{
-    margin-bottom: 4px;
-    padding: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4px;
-  
-}
-
-/* .detail-btn{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50%;
-    font-size: x-large;
-    width: 30px;
-    height: 30px;
-    line-height: 10px;
-} */
-
-/* .detail-btn:hover{
-    background-color: black;
-    color: white;
-} */
-
 .action{
     background-color: white;
     border: 1px solid black;
@@ -69,7 +47,7 @@ body{
     color: white;
 }
 
-.sort-btn{
+.text-btn{
     padding: 8px;
     border-radius: 30px;
     background-color: white;
@@ -81,13 +59,4 @@ body{
     border-radius: 50%;
 }
 
-.color-and-title{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
-.actions-container{
-    display: flex;
-    justify-content: flex-end;
-}
