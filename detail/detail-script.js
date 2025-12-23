@@ -73,6 +73,7 @@ function deleteTodoAndRedirect() {
         });  
     }
 }
+document.getElementById('delete-btn').addEventListener('click',deleteTodoAndRedirect);
 
 function changeStatus() {
     changeDoneStatus(selectedTodo.id, !selectedTodo.done)
@@ -81,3 +82,5 @@ function changeStatus() {
         displayTodo(selectedTodo);
     })
 }
+
+document.getElementById('status-btn').addEventListener('click', changeStatus);
